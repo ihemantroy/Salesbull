@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Date of Birth Checker and File Opener</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <h1>Salesbull</h1>
+    <div class="main">
+        <form id="dobForm">
+  
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+        
+            <label for="dob">Date of Birth (YYYY-MM-DD):</label>
+            <input type="text" id="dob" required>
+        
+            <input type="submit" value="OPEN FILE">
+          </form>
+        
+          <div id="result"></div>
+
+    </div>
+  
+
+  <script>
+    document.getElementById('dobForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      var name = document.getElementById('name').value;
+      var dob = document.getElementById('dob').value;
+
+      var year = parseInt(dob.substr(0, 4));
+
+      if (year >= 2000 && year <= 2005) {
+        window.location.href = 'SEM1.pdf';
+      } else {
+        document.getElementById('result').innerHTML = name + ', your DOB does not fall within the specified range.';
+      }
+    });
+  </script>
+</body>
+</html>

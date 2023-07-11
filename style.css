@@ -1,0 +1,38 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #A7EDE7;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  input[type="submit"] {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .error {
+    color: red;
+    margin-top: 5px;
+  }
+  .main
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #dobForm
+  {
+    display:inline-block;
+  }
+  
